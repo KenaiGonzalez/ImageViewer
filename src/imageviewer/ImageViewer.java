@@ -11,9 +11,8 @@ public class ImageViewer {
         File file = new File("C:\\Users\\kenai\\Desktop\\Imagenes_ImageViewer");
         FileImageLoader imageLoader = new FileImageLoader(file);
         Image image = imageLoader.load();
-        MainFrame mainFrame = new MainFrame();
+        MainFrame mainFrame = new MainFrame(imageLoader);
         mainFrame.getImageDisplay().show(image);
-                
     }
     
 }
